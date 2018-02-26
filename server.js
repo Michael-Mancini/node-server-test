@@ -47,6 +47,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/theanswers', (req, res) => {
+    res.render('theanswers.hbs', {
+        pageTitle: 'The Answers',
+        message: 'We are animals. Study fractals. Love.'
+    });
+})
+
 app.listen(port, () => {
     console.log(`~Server started on port ${port}~`);
 });
